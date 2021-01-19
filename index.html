@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 9-Open Api </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/validation.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">Users</div>
+    <div id="container">
+        <div id="new">
+            <i class="fa fa-plus" aria-hidden="true"></i> NEW
+        </div>
+        <div id="refresh">
+            <i class="fa fa-refresh" aria-hidden="true"> Refresh</i>
+        </div>
+        <div id="users">
+
+        </div>
+    </div>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="table">
+                <div class="tr">
+                    <div class="td">First Name :</div>
+                    <div class="td first-name"></div>
+                </div>
+                <div class="tr">
+                    <div class="td">Last Name :</div>
+                    <div class="td last-name"></div>
+                </div>
+                <div class="tr">
+                    <div class="td">Email :</div>
+                    <div class="td email "></div>
+                </div>
+                <div class="tr">
+                    <div class="td">Gender :</div>
+                    <div class="td gender"></div>
+                </div>
+                <div class="tr">
+                    <div class="td">Phone :</div>
+                    <div class="td phone"></div>
+                </div>
+            </div>
+            <div class="operations">
+                <button id="edit">Edit</button>
+                <button id="delete">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="table">
+                <div class="tr">
+                    <div class="td">First Name :</div>
+                    <div class="td"><input type="text" class="first-name" placeholder="Enter first name"></div>
+                </div>
+                <div class="tr">
+                    <div class="td">Last Name :</div>
+                    <div class="td"><input type="text" class="last-name" placeholder="Enter last name"></div>
+                </div>
+                <div class="tr">
+                    <div class="td">Email :</div>
+                    <div class="td"><input type="email" placeholder="Enter email" class="email"></div>
+                </div>
+                <div class="tr">
+                    <div class="td">Gender :</div>
+                    <div class="td">
+                        <input type="radio" value="Male" name="gender" class="Male">Male
+                        <input type="radio" value="Female" name="gender" class="Female">Female
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="td">Phone :</div>
+                    <div class="td"><input type="number" class="phone" placeholder="Enter phone number"></div>
+                </div>
+            </div>
+            <div class="operations">
+                <button id="save">Save</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
